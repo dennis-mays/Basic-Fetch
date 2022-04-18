@@ -45,5 +45,5 @@ fetch("https://x-colors.herokuapp.com/api/random")
         document.body.style.backgroundColor = xcolorJson.hex;
     })
     .catch((error) => {
-        console.log(error);
+        console.error("Oops!!", error.message);
     });
